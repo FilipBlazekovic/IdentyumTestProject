@@ -9,9 +9,12 @@ maven install
 java -Dvonage_api_key="REPLACE_ME" -Dvonage_api_secret="REPLACE_ME" -jar IdentyumTestProject-0.0.1-SNAPSHOT.jar
 ```
 
+&nbsp;
+&nbsp;
+
 **CURL REQUEST EXAMPLES**
 
-**Registration** [returns session cookie (performs autologin)]
+**REGISTRATION** [returns session cookie (performs autologin)]
 
 ```
 curl -i -X POST -H "Content-Type: application/json" -d '{"username":"admin","password":"Password1234"}' http://127.0.0.1:10000/identyum/register
@@ -24,7 +27,7 @@ Content-Length: 0
 Date: Sat, 23 Jan 2021 12:08:53 GMT
 ```
 
-**Login** [returns session cookie]
+**LOGIN** [returns session cookie]
 
 ```
 curl -i -X POST -H "Content-Type: application/json" -d '{"username":"admin","password":"Password1234"}' http://127.0.0.1:10000/identyum/login
